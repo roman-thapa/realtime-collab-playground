@@ -1,0 +1,6 @@
+const express = require("express")
+const app = express()
+app.listen(8080, ()=>(console.log("server is running")))
+app.get('/', (req, res) => {
+    res.send("We have received your request and we acknowledge it")
+})

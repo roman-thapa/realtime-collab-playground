@@ -1,5 +1,6 @@
 const http = require('http')
 const server = http.createServer((request, response) => {
+    console.log(request.method, request.url)
     if (request.url === '/favicon.ico') {
         response.end()
     } else if (request.url === '/') {
